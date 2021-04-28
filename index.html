@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--style css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--font Poppins-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <!--Gsap cdn -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <!-- costum js-->
+    <script defer src="js/app.js"></script>
+    <script defer src="js/gsap.js"></script>
+
+    <title>Pizzeria</title>
+</head>
+
+<body>
+    <!--Tendina-->
+    <section class="section-primary" id="section">
+        <!--Sfondo-->
+        <div class="backgroung">
+            <div class="img">
+                <div class="overlay">
+                    <h1 class="title-overlay">Preonata il tuo tavolo</h1>
+                </div>
+            </div>
+        </div>
+        <!--//Sfondo-->
+        <!--Tendina-->
+        <div class="menu-tendina">
+            <h2 class="logo">Book<span>Fast</span></h2>
+            <!-- Numero persone-->
+            <div class="number-people">
+                <h3 class="title-people">Numero Persone</h3>
+                <div class="number">
+                    <span class="insert-num">1</span>
+                    <a href="#" class="number-btn meno"> - </a>
+                    <a href="#" class="number-btn  piu"> + </a>
+                </div>
+            </div>
+            <!--  date  -->
+            <div class="number-table">
+                <!--Data -->
+                <div class="date">
+                    <h3>Seleziona una data:</h3>
+                    <input type="date" class="month" id="date">
+                    <span>Ore:</span>
+                    <input type="time" class="hours" id="hours">
+                </div>
+            </div>
+            <!--Forma -->
+            <form action="#" method="POST" class="form" name="form-validation" novalidate>
+                <h2 class="title-form">Prenota</h2>
+                <input type="tex" placeholder="Nome" name="firstname" id="firstname" required>
+                <span class="firstname"></span>
+                <input type="text" placeholder="Cognome" id="lastname" required>
+                <span class="lastname"></span>
+                <input type="tel" placeholder="+39 1234567890" pattern="[0-9]{3}-[0-9]{7}" name="phone" required>
+                <span class="tell"></span>
+                <input type="submit" value="Prenota" class="btn-form" name="submit">
+            </form>
+        </div>
+        <!--//Tendina-->
+    </section>
+
+
+</body>
+
+</html>

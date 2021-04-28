@@ -1,0 +1,610 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+}
+
+
+/* Sectio Primary  */
+
+.section-primary {
+    position: relative;
+    /* sfondo */
+    /* tendina */
+}
+
+.section-primary .popup {
+    position: absolute;
+    top: 10%;
+    right: 30%;
+    z-index: 3;
+    align-self: center;
+    background-color: #fff;
+    border-color: #fff;
+    max-width: 60%;
+    min-height: 40%;
+    padding: 20px 40px;
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-primary .popup .title-popup {
+    justify-self: flex-start;
+    font-size: 2rem;
+    color: #F99117;
+    border-bottom: 1px solid #F99117;
+    margin-bottom: 20px;
+    justify-self: center;
+}
+
+.section-primary .popup .par {
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.section-primary .popup .error {
+    color: red;
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.section-primary .popup .btn-popup {
+    width: 90px;
+    height: auto;
+    padding: 5px 2px;
+    color: #F99117;
+    border: 1px solid #F99117;
+    background-color: transparent;
+    border-radius: 5px;
+    justify-self: center;
+}
+
+.section-primary .popup .btn-popup:hover {
+    background-color: #F99117;
+    color: #fff;
+}
+
+.section-primary .backgroung {
+    width: 100%;
+    height: 100vh;
+}
+
+.section-primary .backgroung .img {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/v-m-7eVAYhtV_X8-unsplash.jpg");
+    background-size: cover;
+    background-position-y: center;
+}
+
+.section-primary .backgroung .img .overlay {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 67.66%, rgba(0, 0, 0, 0) 98.44%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.section-primary .backgroung .img .overlay h1 {
+    color: #fff;
+    font-size: 5.2rem;
+    padding-left: 30%;
+}
+
+.section-primary .menu-tendina {
+    width: 39%;
+    height: 100vh;
+    padding: 10px 30px;
+    display: grid;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    background-color: #fff;
+    /* number table */
+    /* Date */
+    /* Form */
+}
+
+.section-primary .menu-tendina .logo {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #F99117;
+}
+
+.section-primary .menu-tendina .logo span {
+    color: #709246;
+}
+
+.section-primary .menu-tendina .number-people {
+    border-bottom: 1px solid #F99117;
+    padding-bottom: 10px;
+    display: flex;
+    justify-self: flex-start;
+    width: 100%;
+    height: 37px;
+    justify-content: space-between;
+}
+
+.section-primary .menu-tendina .number-people .title-people {
+    font-size: 1.6rem;
+    font-size: #333;
+    font-weight: 400;
+}
+
+.section-primary .menu-tendina .number-people .number {
+    display: flex;
+}
+
+.section-primary .menu-tendina .number-people .number .insert-num {
+    font-size: 1.6rem;
+    font-size: #333;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.section-primary .menu-tendina .number-people .number .number-btn {
+    width: 24px;
+    height: 22px;
+    background-color: #F99117;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.section-primary .menu-tendina .number-people .number .number-btn:nth-child(3) {
+    margin-right: 0px;
+}
+
+.section-primary .menu-tendina .number-people .number .number-btn:hover {
+    transform: scale(1.1);
+}
+
+.section-primary .menu-tendina .number-table {
+    justify-self: flex-start;
+    display: flex;
+    width: 100%;
+    /* table */
+}
+
+.section-primary .menu-tendina .number-table .table-title,
+.section-primary .menu-tendina .number-table .date {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #F99117;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    height: 37px;
+}
+
+.section-primary .menu-tendina .number-table .table-title h3,
+.section-primary .menu-tendina .number-table .date h3 {
+    font-size: 1.6rem;
+    font-size: #333;
+    font-weight: 400;
+}
+
+.section-primary .menu-tendina .number-table .table-title span,
+.section-primary .menu-tendina .number-table .date span {
+    font-size: 1.6rem;
+    font-size: #333;
+    font-weight: 400;
+}
+
+.section-primary .menu-tendina .number-table .table-sala {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-primary .menu-tendina .number-table .table-sala .remove-table {
+    background-color: #FFF;
+}
+
+.section-primary .menu-tendina .number-table .table-sala .table {
+    width: 80px;
+    height: 70px;
+    border: 1px solid #F99117;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.section-primary .menu-tendina .number-table .table-sala .table span {
+    font-size: 1.6rem;
+    color: #333;
+}
+
+.section-primary .menu-tendina .number-table .table-sala .table:hover {
+    background-color: #F99117;
+    border: none;
+}
+
+.section-primary .menu-tendina .number-table .table-sala .table:hover span {
+    color: #fff;
+    border-style: unset;
+    border-width: 0px;
+}
+
+.section-primary .menu-tendina .number-table .table-sala .table:active {
+    background-color: #F99117;
+    border: none;
+}
+
+.section-primary .menu-tendina .number-table .table-sala .second {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.section-primary .menu-tendina .date {
+    align-items: center;
+    margin-top: 20px;
+}
+
+.section-primary .menu-tendina .date span {
+    margin-right: 5px;
+}
+
+.section-primary .menu-tendina .date .month,
+.section-primary .menu-tendina .date .hours {
+    width: auto;
+    height: 18px;
+    border: none;
+    padding: 5px;
+    color: #F99117;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.section-primary .menu-tendina .form {
+    justify-self: flex-end;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    justify-content: flex-end;
+}
+
+.section-primary .menu-tendina .form .firstname,
+.section-primary .menu-tendina .form .lastname,
+.section-primary .menu-tendina .form .tell {
+    font-size: 11px;
+    color: red;
+}
+
+.section-primary .menu-tendina .form .title-form {
+    font-size: 2rem;
+    color: #333;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.section-primary .menu-tendina .form input {
+    font-size: 1.4rem;
+    padding-bottom: 5px;
+    border: none;
+    border-bottom: 1px solid #333;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+.section-primary .menu-tendina .form .errore {
+    border-bottom: 3px solid red;
+    color: red;
+}
+
+.section-primary .menu-tendina .form .btn-form {
+    padding-left: 0px;
+    width: 94px;
+    height: auto;
+    border-radius: 5px;
+    border-bottom: none;
+    border: 1px solid #F99117 !important;
+    background-color: transparent;
+    color: #F99117;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.section-primary .menu-tendina .form .btn-form:hover {
+    background-color: #F99117;
+    border: none;
+    color: #fff;
+}
+
+.section-primary .menu-tendina .form .active {
+    pointer-events: all;
+    opacity: 1;
+}
+
+.section-primary .remove {
+    display: none;
+}
+
+
+/* media */
+
+@media screen and (max-width: 1308px) {
+    .section-primary .backgroung .img .overlay h1 {
+        color: #fff;
+        font-size: 4.2rem;
+        padding-left: 40%;
+    }
+    .section-primary .menu-tendina {
+        width: 40%;
+    }
+}
+
+
+/* media 998 */
+
+@media screen and (max-width: 998px) {
+    .section-primary .backgroung .img .overlay h1 {
+        color: #fff;
+        font-size: 4.2rem;
+        padding-left: 43%;
+    }
+    .section-primary .menu-tendina {
+        width: 55%;
+        padding: 20px 30px;
+    }
+}
+
+
+/* media 810 */
+
+@media screen and (max-width: 810px) {
+    .section-primary .backgroung .img .overlay h1 {
+        color: #fff;
+        font-size: 4.2rem;
+        padding-left: 40%;
+    }
+    .section-primary .menu-tendina {
+        width: 55%;
+        padding: 20px 30px;
+        justify-content: none;
+    }
+}
+
+
+/* mediqa 767 */
+
+@media screen and (max-width: 767px) {
+    .section-primary .backgroung .img .overlay h1 {
+        color: #fff;
+        font-size: 3.2rem;
+        padding-left: 30%;
+    }
+    .section-primary .menu-tendina {
+        width: 65%;
+        padding: 20px 30px;
+    }
+}
+
+
+/* media 657 */
+
+@media screen and (max-width: 767px) {
+    .section-primary .backgroung .img .overlay h1 {
+        color: #fff;
+        font-size: 3.2rem;
+        padding-left: 25%;
+    }
+    .section-primary .menu-tendina {
+        width: 80%;
+        padding: 20px 30px;
+    }
+    .section-primary .menu-tendina .number-table .table-title,
+    .section-primary .menu-tendina .number-table .date {
+        width: 100%;
+        display: flex !important;
+        justify-content: space-between;
+        border-bottom: 1px solid #F99117;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        height: 37px;
+    }
+}
+
+
+/*  media 513 */
+
+@media screen and (max-width: 513px) {
+    .section-primary .popup {
+        top: 10%;
+        width: 90%;
+        right: 10%;
+        z-index: 3;
+        max-width: 80%;
+        min-height: 50%;
+        padding: 20px 40px;
+    }
+    .section-primary .backgroung .img .overlay h1 {
+        color: #fff;
+        font-size: 2.2rem;
+        padding-left: 25%;
+    }
+    .section-primary .menu-tendina {
+        width: 100%;
+        padding: 20px 40px;
+        /* number table */
+        /* Date */
+        /* Form */
+    }
+    .section-primary .menu-tendina .number-people {
+        margin-bottom: 30px;
+        width: 100%;
+        margin-bottom: 30px;
+        height: 37px;
+    }
+    .section-primary .menu-tendina .number-people .title-people {
+        font-size: 1.4rem;
+    }
+    .section-primary .menu-tendina .number-people .number .insert-num {
+        font-size: 1.4rem;
+    }
+    .section-primary .menu-tendina .number-people .number .number-btn {
+        font-size: 1.4rem;
+    }
+    .section-primary .menu-tendina .number-table {
+        /* table */
+    }
+    .section-primary .menu-tendina .number-table .table-title h3,
+    .section-primary .menu-tendina .number-table .date h3 {
+        font-size: 1.4rem;
+        font-size: #333;
+        font-weight: 400;
+    }
+    .section-primary .menu-tendina .number-table .table-title span,
+    .section-primary .menu-tendina .number-table .date span {
+        font-size: 1.4rem;
+        font-size: #333;
+        font-weight: 400;
+    }
+    .section-primary .menu-tendina .number-table .table-sala {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+    }
+    .section-primary .menu-tendina .number-table .table-sala .table span {
+        font-size: 1.4rem;
+        color: #333;
+    }
+    .section-primary .menu-tendina .date span {
+        margin-right: 5px;
+    }
+    .section-primary .menu-tendina .date .month,
+    .section-primary .menu-tendina .date .hours {
+        font-size: 1.2rem;
+    }
+    .section-primary .menu-tendina .form {
+        margin-top: 20px;
+    }
+    .section-primary .menu-tendina .form .title-form {
+        font-size: 1.6rem;
+    }
+    .section-primary .menu-tendina .form input {
+        font-size: 1.2rem;
+    }
+    .section-primary .menu-tendina .form .btn-form {
+        width: 90px;
+        height: auto;
+        border-radius: 5px;
+        border-bottom: none;
+        border: 1px solid #F99117 !important;
+        background-color: transparent;
+        color: #F99117;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 0;
+    }
+}
+
+
+/* media 419 */
+
+@media screen and (max-width: 419px) {
+    .section-primary .menu-tendina {
+        padding: 20px 20px;
+    }
+}
+
+
+/* media 385 */
+
+@media screen and (max-width: 390px) {
+    .section-primary .menu-tendina {
+        /* number table */
+        /* Date */
+    }
+    .section-primary .menu-tendina .number-table {
+        /* table */
+    }
+    .section-primary .menu-tendina .number-table .table-sala .table {
+        width: 68px;
+        height: 60px;
+    }
+    .section-primary .menu-tendina .number-table .table-sala .table span {
+        font-size: 1.4rem;
+        color: #333;
+    }
+    .section-primary .menu-tendina .date {
+        display: block !important;
+    }
+    .section-primary .menu-tendina .date h3 {
+        margin-bottom: 10px;
+    }
+    .section-primary .menu-tendina .date span {
+        margin-right: 5px;
+    }
+}
+
+
+/* media 300 */
+
+@media screen and (max-width: 300px) {
+    .section-primary .menu-tendina {
+        height: auto;
+        /* number table */
+        /* Date */
+    }
+    .section-primary .menu-tendina .number-table {
+        /* table */
+    }
+    .section-primary .menu-tendina .number-table .table-sala .table {
+        width: 90px;
+        height: 80px;
+        margin: 10px;
+    }
+    .section-primary .menu-tendina .number-table .table-sala .table span {
+        font-size: 1.4rem;
+        color: #333;
+    }
+    .section-primary .menu-tendina .date {
+        display: block !important;
+    }
+    .section-primary .menu-tendina .date h3 {
+        margin-bottom: 10px;
+    }
+    .section-primary .menu-tendina .date span {
+        margin-right: 5px;
+    }
+}
+
+
+/*# sourceMappingURL=style.css.map */
